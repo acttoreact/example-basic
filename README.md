@@ -1,2 +1,3 @@
-# example-basic
-Basic A2R example
+# A2R Project
+
+Awesome project by A2R
