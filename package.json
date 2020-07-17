@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run-watcher": "docker stop watcher;docker rm watcher;IMAGE=watcher:latest;docker run -it -d -v $INIT_CWD/server:/usr/src/app/server -v $INIT_CWD/www/.a2r/proxy:/usr/src/app/.a2r/proxy --name watcher $IMAGE",
+    "run-server-dev": "docker stop server-dev;docker rm server-dev;IMAGE=server-dev:latest;docker run -it -d -v $INIT_CWD/server:/usr/src/app/server -p 4000:4000 --name server-dev $IMAGE",
+    "run-server-prod": "docker stop server;docker rm server;IMAGE=server:latest;docker run -it -d -v $INIT_CWD/server:/usr/src/app/src/server -p 4000:4000 --name server $IMAGE",
+    "start-watcher": "docker stop watcher;docker start watcher",
+    "start-server-dev": "docker stop server;docker start server-dev",
+    "start-server-prod": "docker stop server;docker start server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "a2r": "^0.6.8"
+    "a2r": "^0.6.15"
   }
 }

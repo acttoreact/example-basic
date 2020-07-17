@@ -1,5 +1,5 @@
 {
-  "version": "0.6.6",
+  "version": "0.6.8",
   "projects": [
     {
       "version": "1.0.0",
@@ -8,9 +8,9 @@
     }
   ],
   "devServer": {
-    "version": "version-0.9.0-dev",
+    "version": "latest",
     "lastUpdate": "2020-07-16T15:34:03.891Z",
-    "imageName": "act2react/server-dev",
+    "imageName": "server-dev",
     "name": "server-dev"
   },
   "server": {
@@ -20,9 +20,9 @@
     "name": "server"
   },
   "watcher": {
-    "version": "version-0.9.0",
+    "version": "latest",
     "lastUpdate": "2020-07-16T15:34:03.891Z",
-    "imageName": "act2react/watcher",
+    "imageName": "watcher",
     "name": "watcher"
   }
 }
