@@ -15,6 +15,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "a2r": "^0.6.15"
+    "a2r": "^0.6.16"
   }
 }
